@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Seraphino Parfums — Искусство быть собой</title>
+    <title>Seraphino Parfums – Искусство быть собой</title>
 
     <meta
         name="description"
-        content="Seraphino Parfums — современный парфюмерный магазин. Откройте аромат, который расскажет вашу историю."
+        content="Seraphino Parfums – современный парфюмерный магазин. Откройте аромат, который расскажет вашу историю."
     >
 
     <style>
@@ -35,11 +35,11 @@
                 "Segoe UI",
                 sans-serif;
 
-            color: #f5f1ff;
+            color: #E7FAE8;
             background:
-                radial-gradient(circle at 80% 10%, rgba(125, 63, 220, .18), transparent 30%),
-                radial-gradient(circle at 10% 50%, rgba(88, 45, 160, .12), transparent 30%),
-                #08070d;
+                radial-gradient(circle at 80% 10%, rgba(34, 59, 74, .4), transparent 30%),
+                radial-gradient(circle at 10% 50%, rgba(74, 73, 81, .2), transparent 30%),
+                #02030A;
 
             line-height: 1.6;
             overflow-x: hidden;
@@ -60,13 +60,13 @@
         }
 
         :root {
-            --black: #08070d;
-            --black-soft: #100e18;
-            --purple: #8b5cf6;
-            --purple-light: #b79aff;
-            --purple-dark: #5b21b6;
-            --white: #faf8ff;
-            --muted: #aaa3b8;
+            --black: #02030A;
+            --black-soft: #0b0e15;
+            --accent: #223B4A;
+            --accent-light: #E7FAE8;
+            --accent-dark: #4A4951;
+            --white: #E7FAE8;
+            --muted: #B7BDBF;
             --border: rgba(255, 255, 255, .09);
             --glass: rgba(255, 255, 255, .045);
             --max-width: 1180px;
@@ -93,7 +93,7 @@
 
             margin-bottom: 18px;
 
-            color: var(--purple-light);
+            color: var(--accent-light);
             font-size: .78rem;
             font-weight: 700;
             letter-spacing: .18em;
@@ -104,7 +104,7 @@
             content: "";
             width: 28px;
             height: 1px;
-            background: var(--purple);
+            background: var(--accent);
         }
 
         .section-title {
@@ -134,7 +134,7 @@
 
             z-index: 1000;
 
-            background: rgba(8, 7, 13, .72);
+            background: rgba(2, 3, 10, .72);
             border-bottom: 1px solid rgba(255, 255, 255, .07);
 
             backdrop-filter: blur(18px);
@@ -168,14 +168,19 @@
             display: grid;
             place-items: center;
 
-            border: 1px solid rgba(183, 154, 255, .5);
+            border: 1px solid rgba(231, 250, 232, .5);
             border-radius: 50%;
 
-            color: var(--purple-light);
+            color: var(--accent-light);
 
             box-shadow:
-                0 0 25px rgba(139, 92, 246, .22),
-                inset 0 0 15px rgba(139, 92, 246, .08);
+                0 0 25px rgba(231, 250, 232, .18),
+                inset 0 0 15px rgba(231, 250, 232, .06);
+        }
+
+        .logo-img {
+            display: block;
+            object-fit: cover;
         }
 
         .nav-links {
@@ -189,7 +194,7 @@
         .nav-links a {
             position: relative;
 
-            color: #c9c3d2;
+            color: #c9cfd2;
             font-size: .9rem;
 
             transition:
@@ -207,7 +212,7 @@
             width: 100%;
             height: 1px;
 
-            background: var(--purple-light);
+            background: var(--accent-light);
 
             transform: scaleX(0);
             transform-origin: right;
@@ -228,22 +233,22 @@
         .nav-button {
             padding: 10px 18px;
 
-            border: 1px solid rgba(183, 154, 255, .35);
+            border: 1px solid rgba(231, 250, 232, .35);
             border-radius: 999px;
 
             color: white !important;
-            background: rgba(139, 92, 246, .12);
+            background: rgba(34, 59, 74, .12);
         }
 
         .nav-button:hover {
-            background: rgba(139, 92, 246, .25);
+            background: rgba(34, 59, 74, .25);
         }
 
         .nav-cta {
             display: none;
         }
 
-        /* Hamburger toggle — shown only on mobile (<= 680px) */
+        /* Hamburger toggle – shown only on mobile (<= 680px) */
         .nav-toggle {
             display: none;
             align-items: center;
@@ -269,13 +274,13 @@
         }
 
         .nav-toggle:hover {
-            border-color: rgba(183, 154, 255, .35);
-            background: rgba(139, 92, 246, .12);
+            border-color: rgba(231, 250, 232, .35);
+            background: rgba(34, 59, 74, .12);
         }
 
         .nav-toggle.open {
-            border-color: rgba(183, 154, 255, .4);
-            background: rgba(139, 92, 246, .15);
+            border-color: rgba(231, 250, 232, .4);
+            background: rgba(34, 59, 74, .15);
         }
 
         body.menu-open {
@@ -317,8 +322,8 @@
             background:
                 radial-gradient(
                     circle,
-                    rgba(139, 92, 246, .25) 0%,
-                    rgba(139, 92, 246, .08) 40%,
+                    rgba(34, 59, 74, .55) 0%,
+                    rgba(34, 59, 74, .18) 40%,
                     transparent 70%
                 );
 
@@ -358,10 +363,10 @@
             margin-bottom: 25px;
             padding: 7px 13px;
 
-            border: 1px solid rgba(183, 154, 255, .18);
+            border: 1px solid rgba(231, 250, 232, .18);
             border-radius: 999px;
 
-            color: #cfc5e7;
+            color: #dce8e0;
             background: rgba(255, 255, 255, .035);
 
             font-size: .78rem;
@@ -374,9 +379,9 @@
             height: 6px;
 
             border-radius: 50%;
-            background: var(--purple-light);
+            background: var(--accent-light);
 
-            box-shadow: 0 0 12px var(--purple);
+            box-shadow: 0 0 12px var(--accent);
         }
 
         .hero h1 {
@@ -392,7 +397,7 @@
         }
 
         .hero h1 em {
-            color: var(--purple-light);
+            color: var(--accent-light);
             font-style: italic;
         }
 
@@ -401,7 +406,7 @@
 
             margin-bottom: 38px;
 
-            color: #aaa3b8;
+            color: #B7BDBF;
             font-size: clamp(1rem, 2vw, 1.2rem);
         }
 
@@ -441,29 +446,29 @@
             background:
                 linear-gradient(
                     135deg,
-                    #9b6cff,
-                    #6535b9
+                    #2f5064,
+                    #223B4A
                 );
 
             box-shadow:
-                0 12px 35px rgba(104, 54, 190, .25);
+                0 12px 35px rgba(74, 73, 81, .25);
         }
 
         .btn-primary:hover {
             transform: translateY(-4px);
             box-shadow:
-                0 18px 45px rgba(104, 54, 190, .42);
+                0 18px 45px rgba(74, 73, 81, .42);
         }
 
         .btn-secondary {
             border-color: var(--border);
-            color: #ded8e8;
+            color: #d8e4dc;
             background: rgba(255, 255, 255, .035);
         }
 
         .btn-secondary:hover {
             transform: translateY(-4px);
-            border-color: rgba(183, 154, 255, .3);
+            border-color: rgba(231, 250, 232, .3);
             background: rgba(255, 255, 255, .07);
         }
 
@@ -474,14 +479,14 @@
             align-items: center;
             gap: 12px;
 
-            color: #77717f;
+            color: #7c8287;
             font-size: .82rem;
         }
 
         .hero-note-line {
             width: 40px;
             height: 1px;
-            background: #514a5c;
+            background: #5a6066;
         }
 
         /* =========================================================
@@ -526,7 +531,7 @@
             background:
                 radial-gradient(
                     circle at 65% 25%,
-                    rgba(139, 92, 246, .24),
+                    rgba(34, 59, 74, .45),
                     transparent 32%
                 ),
                 linear-gradient(
@@ -551,7 +556,7 @@
             font-size: 24rem;
             line-height: 1;
 
-            color: rgba(183, 154, 255, .045);
+            color: rgba(231, 250, 232, .045);
         }
 
         .about-card::after {
@@ -565,18 +570,18 @@
             right: 80px;
             top: 70px;
 
-            border: 1px solid rgba(183, 154, 255, .2);
+            border: 1px solid rgba(231, 250, 232, .2);
             border-radius: 50%;
 
             box-shadow:
-                0 0 60px rgba(139, 92, 246, .12);
+                0 0 60px rgba(34, 59, 74, .12);
         }
 
         .about-year {
             position: relative;
             z-index: 2;
 
-            color: var(--purple-light);
+            color: var(--accent-light);
             font-size: .8rem;
             font-weight: 700;
             letter-spacing: .18em;
@@ -599,7 +604,7 @@
 
             max-width: 450px;
 
-            color: #a9a1b5;
+            color: #a8aeb3;
         }
 
         /* =========================================================
@@ -638,19 +643,46 @@
             overflow: hidden;
 
             border: 1px solid var(--border);
+            border-bottom-color: rgba(2, 3, 10, 1);
             border-radius: 22px;
 
             background:
                 linear-gradient(
-                    145deg,
-                    rgba(255,255,255,.055),
-                    rgba(255,255,255,.018)
-                );
+                    180deg,
+                    rgba(2,3,10,.35) 0%,
+                    rgba(2,3,10,.62) 50%,
+                    rgba(2,3,10,1) 100%
+                ),
+                var(--brand-bg, none) center / cover no-repeat;
 
             transition:
                 transform .4s cubic-bezier(.2,.8,.2,1),
                 border-color .4s ease,
                 box-shadow .4s ease;
+        }
+
+        .brand-card--montale {
+            --brand-bg: url("pics/mont.jpg");
+        }
+
+        .brand-card--liquides {
+            --brand-bg: url("pics/bloody.jpg");
+        }
+
+        .brand-card--sorcinelli {
+            --brand-bg: url("pics/fil.jpg");
+        }
+
+        .brand-card--toskovat {
+            --brand-bg: url("pics/tosk.jpg");
+        }
+
+        .brand-card--adi {
+            --brand-bg: url("pics/adi.jpg");
+        }
+
+        .brand-card--benneviento {
+            --brand-bg: url("pics/benne.jpg");
         }
 
         .brand-card::before {
@@ -666,7 +698,7 @@
 
             border-radius: 50%;
 
-            background: rgba(139, 92, 246, .08);
+            background: rgba(34, 59, 74, .08);
 
             filter: blur(10px);
 
@@ -676,11 +708,11 @@
         .brand-card:hover {
             transform: translateY(-9px);
 
-            border-color: rgba(183, 154, 255, .3);
+            border-color: rgba(231, 250, 232, .3);
 
             box-shadow:
                 0 20px 55px rgba(0,0,0,.3),
-                0 0 35px rgba(104,54,190,.08);
+                0 0 35px rgba(74,73,81,.08);
         }
 
         .brand-card:hover::before {
@@ -688,9 +720,32 @@
         }
 
         .brand-number {
-            color: #625c6c;
+            position: relative;
+            z-index: 1;
+
+            align-self: flex-start;
+
+            padding: 5px 11px;
+
+            border: 1px solid rgba(231, 250, 232, .22);
+            border-radius: 999px;
+
+            color: #dce8e0;
+            background: rgba(2, 3, 10, .55);
+
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+
+            box-shadow:
+                0 4px 18px rgba(2, 3, 10, .45),
+                inset 0 1px rgba(255, 255, 255, .06);
+
             font-size: .75rem;
             letter-spacing: .1em;
+
+            text-shadow:
+                0 1px 3px rgba(2, 3, 10, .95),
+                0 0 12px rgba(2, 3, 10, .8);
         }
 
         .brand-name {
@@ -703,7 +758,7 @@
         }
 
         .brand-type {
-            color: #827b8c;
+            color: #8a9095;
             font-size: .82rem;
         }
 
@@ -716,7 +771,7 @@
                 linear-gradient(
                     180deg,
                     transparent,
-                    rgba(93, 43, 173, .07),
+                    rgba(74, 73, 81, .07),
                     transparent
                 );
         }
@@ -744,7 +799,7 @@
 
             overflow: hidden;
 
-            background: #0f0d16;
+            background: #0a0d13;
 
             transition:
                 transform .4s ease,
@@ -753,17 +808,17 @@
 
         .promo-card:hover {
             transform: translateY(-7px);
-            border-color: rgba(183,154,255,.28);
+            border-color: rgba(231,250,232,.28);
         }
 
         .promo-card.featured {
             background:
                 radial-gradient(
                     circle at 80% 20%,
-                    rgba(139,92,246,.28),
+                    rgba(34,59,74,.5),
                     transparent 35%
                 ),
-                #120d1d;
+                #0b0e15;
         }
 
         .promo-tag {
@@ -772,10 +827,10 @@
 
             padding: 6px 10px;
 
-            border: 1px solid rgba(183,154,255,.2);
+            border: 1px solid rgba(231,250,232,.2);
             border-radius: 999px;
 
-            color: var(--purple-light);
+            color: var(--accent-light);
 
             font-size: .72rem;
             font-weight: 700;
@@ -797,7 +852,7 @@
         }
 
         .promo-code {
-            color: #dad0ea;
+            color: #d9e6de;
             font-size: .78rem;
         }
 
@@ -819,11 +874,11 @@
 
             padding: 6px 11px;
 
-            border: 1px solid rgba(183, 154, 255, .28);
+            border: 1px solid rgba(231, 250, 232, .28);
             border-radius: 999px;
 
-            color: #e6def5;
-            background: rgba(139, 92, 246, .12);
+            color: #e2f0e4;
+            background: rgba(34, 59, 74, .12);
 
             font-size: .74rem;
             font-weight: 700;
@@ -833,7 +888,7 @@
         .promo-expiry::before {
             content: "◷";
 
-            color: var(--purple-light);
+            color: var(--accent-light);
             font-size: .8rem;
         }
 
@@ -841,7 +896,7 @@
             margin-top: 14px;
             padding-left: 18px;
 
-            color: #8d869a;
+            color: #949aa0;
             font-size: .82rem;
             line-height: 1.55;
         }
@@ -867,11 +922,11 @@
 
             padding: 12px 20px;
 
-            border: 1px solid rgba(183, 154, 255, .3);
+            border: 1px solid rgba(231, 250, 232, .3);
             border-radius: 999px;
 
             color: white;
-            background: rgba(139, 92, 246, .14);
+            background: rgba(34, 59, 74, .14);
 
             font-size: .84rem;
             font-weight: 700;
@@ -886,8 +941,8 @@
         .promo-cta:hover {
             transform: translateY(-3px);
 
-            border-color: rgba(183, 154, 255, .55);
-            background: rgba(139, 92, 246, .28);
+            border-color: rgba(231, 250, 232, .55);
+            background: rgba(34, 59, 74, .28);
         }
 
         .demo-note {
@@ -899,10 +954,10 @@
 
             padding: 16px 20px;
 
-            border: 1px dashed rgba(183, 154, 255, .3);
+            border: 1px dashed rgba(231, 250, 232, .3);
             border-radius: 16px;
 
-            color: #8f87a0;
+            color: #949aa0;
             background: rgba(255, 255, 255, .025);
 
             font-size: .85rem;
@@ -917,10 +972,10 @@
             display: grid;
             place-items: center;
 
-            border: 1px solid rgba(183, 154, 255, .4);
+            border: 1px solid rgba(231, 250, 232, .4);
             border-radius: 50%;
 
-            color: var(--purple-light);
+            color: var(--accent-light);
             font-size: .72rem;
             font-weight: 700;
         }
@@ -945,7 +1000,7 @@
             background:
                 linear-gradient(
                     135deg,
-                    rgba(139,92,246,.12),
+                    rgba(34,59,74,.12),
                     rgba(255,255,255,.025)
                 );
         }
@@ -986,7 +1041,7 @@
 
         .benefit:hover {
             transform: translateX(7px);
-            background: rgba(139,92,246,.07);
+            background: rgba(34,59,74,.07);
         }
 
         .benefit-icon {
@@ -998,8 +1053,8 @@
 
             border-radius: 13px;
 
-            color: var(--purple-light);
-            background: rgba(139,92,246,.1);
+            color: var(--accent-light);
+            background: rgba(34,59,74,.1);
 
             font-size: 1.15rem;
         }
@@ -1010,7 +1065,7 @@
         }
 
         .benefit p {
-            color: #898291;
+            color: #8f959b;
             font-size: .88rem;
         }
 
@@ -1050,8 +1105,8 @@
 
             border-radius: 12px;
 
-            background: rgba(139,92,246,.1);
-            color: var(--purple-light);
+            background: rgba(34,59,74,.1);
+            color: var(--accent-light);
         }
 
         .contact-card h3 {
@@ -1070,7 +1125,316 @@
         }
 
         .contact-card a:hover {
-            color: var(--purple-light);
+            color: var(--accent-light);
+        }
+
+        .contact-card .contact-route {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+
+            margin-top: 18px;
+            padding: 11px 18px;
+
+            border: 1px solid rgba(231, 250, 232, .3);
+            border-radius: 999px;
+
+            color: white;
+            background: rgba(34, 59, 74, .14);
+
+            font-size: .84rem;
+            font-weight: 700;
+            white-space: nowrap;
+
+            transition:
+                transform .3s ease,
+                border-color .3s ease,
+                background .3s ease;
+        }
+
+        .contact-card .contact-route:hover {
+            transform: translateY(-3px);
+
+            border-color: rgba(231, 250, 232, .55);
+            background: rgba(34, 59, 74, .28);
+        }
+
+        .contact-map {
+            margin-top: 16px;
+
+            border: 1px solid var(--border);
+            border-radius: 24px;
+
+            overflow: hidden;
+
+            background: #0a0d13;
+
+            box-shadow:
+                inset 0 1px rgba(255, 255, 255, .05),
+                0 30px 80px rgba(0, 0, 0, .25);
+        }
+
+        .contact-map iframe {
+            width: 100%;
+            height: 380px;
+
+            display: block;
+
+            border: 0;
+
+            filter: grayscale(.2) contrast(1.05);
+        }
+
+        /* =========================================================
+           REVIEWS
+        ========================================================= */
+
+        .reviews {
+            background:
+                linear-gradient(
+                    180deg,
+                    transparent,
+                    rgba(74, 73, 81, .07),
+                    transparent
+                );
+        }
+
+        .reviews-layout {
+            display: grid;
+            grid-template-columns: 1fr 1.4fr;
+            gap: 50px;
+            align-items: start;
+
+            margin-top: 50px;
+        }
+
+        .review-form {
+            padding: 32px;
+
+            border: 1px solid var(--border);
+            border-radius: 24px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(34, 59, 74, .1),
+                    rgba(255, 255, 255, .025)
+                );
+
+            box-shadow:
+                inset 0 1px rgba(255, 255, 255, .05),
+                0 30px 80px rgba(0, 0, 0, .25);
+        }
+
+        .review-form h3 {
+            margin-bottom: 6px;
+
+            font-family: Georgia, serif;
+            font-size: 1.6rem;
+            font-weight: 400;
+        }
+
+        .review-form > p {
+            margin-bottom: 24px;
+
+            color: var(--muted);
+            font-size: .9rem;
+        }
+
+        .review-form .field {
+            margin-bottom: 20px;
+        }
+
+        .review-form label {
+            display: block;
+
+            margin-bottom: 8px;
+
+            color: #dce8e0;
+            font-size: .78rem;
+            font-weight: 700;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+        }
+
+        .review-form input,
+        .review-form textarea {
+            width: 100%;
+
+            padding: 13px 15px;
+
+            border: 1px solid var(--border);
+            border-radius: 14px;
+
+            color: var(--white);
+            background: rgba(2, 3, 10, .5);
+
+            font: inherit;
+            font-size: .95rem;
+
+            transition:
+                border-color .25s ease,
+                background .25s ease;
+        }
+
+        .review-form input:focus,
+        .review-form textarea:focus {
+            outline: none;
+
+            border-color: rgba(231, 250, 232, .45);
+            background: rgba(2, 3, 10, .7);
+        }
+
+        .review-form textarea {
+            min-height: 110px;
+            resize: vertical;
+        }
+
+        .star-rating {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .star-rating button {
+            padding: 0;
+
+            border: none;
+
+            background: none;
+
+            color: #5a6066;
+
+            font-size: 1.7rem;
+            line-height: 1;
+
+            cursor: pointer;
+
+            transition:
+                color .2s ease,
+                transform .2s ease;
+        }
+
+        .star-rating button:hover {
+            transform: scale(1.15);
+        }
+
+        .star-rating button.active {
+            color: var(--accent-light);
+
+            text-shadow: 0 0 14px rgba(34, 59, 74, .6);
+        }
+
+        .review-form .btn {
+            width: 100%;
+            margin-top: 6px;
+        }
+
+        .form-status {
+            margin-top: 14px;
+
+            font-size: .85rem;
+            text-align: center;
+
+            opacity: 0;
+            transition: opacity .3s ease;
+        }
+
+        .form-status.show {
+            opacity: 1;
+        }
+
+        .review-list {
+            display: grid;
+            gap: 16px;
+        }
+
+        .review-card {
+            padding: 26px;
+
+            border: 1px solid var(--border);
+            border-radius: 20px;
+
+            background: rgba(255, 255, 255, .025);
+
+            transition:
+                transform .3s ease,
+                border-color .3s ease;
+        }
+
+        .review-card:hover {
+            transform: translateY(-4px);
+
+            border-color: rgba(231, 250, 232, .25);
+        }
+
+        .review-card-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 14px;
+
+            margin-bottom: 12px;
+        }
+
+        .review-author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .review-avatar {
+            width: 40px;
+            height: 40px;
+
+            display: grid;
+            place-items: center;
+
+            border: 1px solid rgba(231, 250, 232, .3);
+            border-radius: 50%;
+
+            color: var(--accent-light);
+            background: rgba(34, 59, 74, .12);
+
+            font-family: Georgia, serif;
+            font-size: 1.05rem;
+            font-weight: 700;
+        }
+
+        .review-author strong {
+            display: block;
+
+            font-size: .98rem;
+        }
+
+        .review-date {
+            color: #7c8287;
+            font-size: .78rem;
+        }
+
+        .review-stars {
+            display: inline-flex;
+            gap: 2px;
+
+            color: var(--accent-light);
+            font-size: .9rem;
+            letter-spacing: 2px;
+        }
+
+        .review-card p {
+            color: var(--muted);
+            font-size: .92rem;
+        }
+
+        .review-empty {
+            padding: 30px;
+
+            border: 1px dashed rgba(231, 250, 232, .3);
+            border-radius: 20px;
+
+            color: #949aa0;
+            text-align: center;
         }
 
         /* =========================================================
@@ -1082,7 +1446,7 @@
 
             border-top: 1px solid var(--border);
 
-            color: #716b79;
+            color: #7a8085;
             font-size: .8rem;
         }
 
@@ -1094,7 +1458,7 @@
         }
 
         .footer-brand {
-            color: #aaa3b3;
+            color: #B7BDBF;
             font-family: Georgia, serif;
             font-size: 1rem;
         }
@@ -1148,7 +1512,7 @@
         }
 
         /* =========================================================
-           RESPONSIVE — TABLET
+           RESPONSIVE – TABLET
         ========================================================= */
 
         @media (max-width: 900px) {
@@ -1182,10 +1546,15 @@
             .contact-grid {
                 grid-template-columns: 1fr 1fr;
             }
+
+            .reviews-layout {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
         }
 
         /* =========================================================
-           RESPONSIVE — MOBILE
+           RESPONSIVE – MOBILE
         ========================================================= */
 
         @media (max-width: 680px) {
@@ -1225,7 +1594,7 @@
                 margin: 0;
                 padding: 10px 14px 24px;
 
-                background: rgba(8, 7, 13, .97);
+                background: rgba(2, 3, 10, .97);
                 border-bottom: 1px solid rgba(255, 255, 255, .09);
 
                 backdrop-filter: blur(18px);
@@ -1367,6 +1736,10 @@
                 grid-template-columns: 1fr;
             }
 
+            .contact-map iframe {
+                height: 300px;
+            }
+
             .footer-inner {
                 flex-direction: column;
                 align-items: flex-start;
@@ -1404,7 +1777,11 @@
             <nav class="nav">
 
                 <a href="#home" class="logo">
-                    <span class="logo-mark">S</span>
+                    <img
+                        class="logo-mark logo-img"
+                        src="pics/pfp.jpg"
+                        alt="Seraphino Parfums"
+                    >
                     Seraphino
                 </a>
 
@@ -1413,6 +1790,7 @@
                     <li><a href="#brands">Бренды</a></li>
                     <li><a href="#promotions">Акции</a></li>
                     <li><a href="#loyalty">Бонусы</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
                     <li><a href="#contacts">Контакты</a></li>
                     <li class="nav-cta">
                         <a href="#brands" class="nav-button">Каталог</a>
@@ -1456,7 +1834,7 @@
                     </div>
 
                     <h1>
-                        Аромат — это<br>
+                        Аромат – это<br>
                         ваша <em>история.</em>
                     </h1>
 
@@ -1483,6 +1861,86 @@
                         <span class="hero-note-line"></span>
                         Парфюмерия, которая говорит за вас
                     </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             REVIEWS
+        ====================================================== -->
+
+        <section class="section reviews" id="reviews">
+
+            <div class="container">
+
+                <div class="section-label">
+                    Отзывы
+                </div>
+
+                <h2 class="section-title">
+                    Что говорят<br>
+                    наши гости.
+                </h2>
+
+                <p class="section-description">
+                    Поделитесь впечатлениями о магазине и ароматах –
+                    или прочитайте, что пишут другие.
+                </p>
+
+                <div class="reviews-layout">
+
+                    <form class="review-form" id="review-form" novalidate>
+
+                        <h3>Оставить отзыв</h3>
+                        <p>Заполните форму – ваш отзыв появится в списке ниже.</p>
+
+                        <div class="field">
+                            <label for="review-name">Ваш никнейм</label>
+                            <input
+                                type="text"
+                                id="review-name"
+                                name="name"
+                                placeholder="Например, Anna_Parfum"
+                                maxlength="30"
+                                required
+                            >
+                        </div>
+
+                        <div class="field">
+                            <label>Ваша оценка</label>
+                            <div class="star-rating" id="star-rating" role="radiogroup" aria-label="Оценка от 1 до 5">
+                                <button type="button" data-value="1" aria-label="1 звезда">★</button>
+                                <button type="button" data-value="2" aria-label="2 звезды">★</button>
+                                <button type="button" data-value="3" aria-label="3 звезды">★</button>
+                                <button type="button" data-value="4" aria-label="4 звезды">★</button>
+                                <button type="button" data-value="5" aria-label="5 звёзд">★</button>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="review-text">Ваш отзыв</label>
+                            <textarea
+                                id="review-text"
+                                name="text"
+                                placeholder="Расскажите, что вам понравилось…"
+                                maxlength="600"
+                                required
+                            ></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            Отправить отзыв
+                        </button>
+
+                        <p class="form-status" id="form-status" role="status"></p>
+
+                    </form>
+
+                    <div class="review-list" id="review-list"></div>
 
                 </div>
 
@@ -1521,7 +1979,7 @@
                         <p>
                             Мы тщательно формируем коллекцию, объединяя
                             признанные парфюмерные дома и современные
-                            композиции. Для нас аромат — это не просто
+                            композиции. Для нас аромат – это не просто
                             аксессуар, а продолжение характера человека.
                         </p>
 
@@ -1535,7 +1993,7 @@
 
                         <h3>
                             От первого<br>
-                            впечатления —<br>
+                            впечатления –<br>
                             к воспоминанию.
                         </h3>
 
@@ -1585,7 +2043,7 @@
 
                 <div class="brand-grid">
 
-                    <article class="brand-card">
+                    <article class="brand-card brand-card--montale">
                         <span class="brand-number">01 / HOUSE</span>
 
                         <div>
@@ -1597,7 +2055,7 @@
                     </article>
 
 
-                    <article class="brand-card">
+                    <article class="brand-card brand-card--liquides">
                         <span class="brand-number">02 / HOUSE</span>
 
                         <div>
@@ -1609,7 +2067,7 @@
                     </article>
 
 
-                    <article class="brand-card">
+                    <article class="brand-card brand-card--sorcinelli">
                         <span class="brand-number">03 / HOUSE</span>
 
                         <div>
@@ -1621,7 +2079,7 @@
                     </article>
 
 
-                    <article class="brand-card">
+                    <article class="brand-card brand-card--toskovat">
                         <span class="brand-number">04 / HOUSE</span>
 
                         <div>
@@ -1633,7 +2091,7 @@
                     </article>
 
 
-                    <article class="brand-card">
+                    <article class="brand-card brand-card--adi">
                         <span class="brand-number">05 / HOUSE</span>
 
                         <div>
@@ -1645,7 +2103,7 @@
                     </article>
 
 
-                    <article class="brand-card">
+                    <article class="brand-card brand-card--benneviento">
                         <span class="brand-number">06 / HOUSE</span>
 
                         <div>
@@ -2010,6 +2468,15 @@
                             Лиговский проспект, 30
                         </p>
 
+                        <a
+                            class="contact-route"
+                            href="https://www.google.com/maps/dir/?api=1&destination=Лиговский+проспект+30,+Санкт-Петербург"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            Построить маршрут <span>→</span>
+                        </a>
+
                     </div>
 
 
@@ -2054,6 +2521,16 @@
 
                     </div>
 
+                </div>
+
+                <div class="contact-map">
+                    <iframe
+                        src="https://www.google.com/maps?q=Лиговский+проспект+30,+Санкт-Петербург&output=embed"
+                        title="Карта: Seraphino Parfums, Лиговский проспект, 30"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        allowfullscreen
+                    ></iframe>
                 </div>
 
             </div>
@@ -2139,6 +2616,191 @@
                 ) {
                     closeMenu();
                 }
+            });
+        })();
+
+        /* =========================================================
+           REVIEWS
+        ========================================================= */
+
+        (function () {
+            var STORAGE_KEY = 'seraphino-reviews';
+
+            var sampleReviews = [
+                {
+                    name: 'Anna_Parfum',
+                    rating: 5,
+                    date: '12 октября 2026',
+                    text: 'Огромный выбор нишевых ароматов! Консультант помогла подобрать идеальный парфюм под мой характер. Обязательно вернусь ещё.'
+                },
+                {
+                    name: 'DmitryK',
+                    rating: 4,
+                    date: '5 октября 2026',
+                    text: 'Отличный магазин и приятная атмосфера. Минус звезда только за то, что в выходные бывает очередь к консультантам.'
+                },
+                {
+                    name: 'ScentHunter',
+                    rating: 5,
+                    date: '28 сентября 2026',
+                    text: 'Нашёл здесь редкий аромат, который искал больше года. Цены адекватные, есть бонусная программа – очень удобно.'
+                }
+            ];
+
+            function loadReviews() {
+                try {
+                    var stored = localStorage.getItem(STORAGE_KEY);
+                    if (stored) {
+                        var parsed = JSON.parse(stored);
+                        if (Array.isArray(parsed)) {
+                            return parsed;
+                        }
+                    }
+                } catch (e) {
+                    /* ignore */
+                }
+                return sampleReviews.slice();
+            }
+
+            function saveReviews(reviews) {
+                try {
+                    localStorage.setItem(STORAGE_KEY, JSON.stringify(reviews));
+                } catch (e) {
+                    /* ignore */
+                }
+            }
+
+            function formatDate(date) {
+                var months = [
+                    'января', 'февраля', 'марта', 'апреля', 'мая', 'июня',
+                    'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'
+                ];
+                return date.getDate() + ' ' + months[date.getMonth()] + ' ' + date.getFullYear();
+            }
+
+            function starsHtml(rating) {
+                var html = '';
+                for (var i = 1; i <= 5; i++) {
+                    html += i <= rating ? '★' : '☆';
+                }
+                return html;
+            }
+
+            function escapeHtml(str) {
+                return String(str)
+                    .replace(/&/g, '\x26amp;')
+                    .replace(/</g, '\x26lt;')
+                    .replace(/>/g, '\x26gt;')
+                    .replace(/"/g, '\x26quot;')
+                    .replace(/'/g, '\x26#39;');
+            }
+
+            function renderReviews(reviews) {
+                var list = document.getElementById('review-list');
+                if (!list) {
+                    return;
+                }
+
+                if (!reviews.length) {
+                    list.innerHTML = '<p class="review-empty">Пока нет отзывов. Станьте первым!</p>';
+                    return;
+                }
+
+                list.innerHTML = reviews.map(function (review) {
+                    var initial = (review.name || '?').charAt(0).toUpperCase();
+                    return (
+                        '<article class="review-card">' +
+                            '<div class="review-card-top">' +
+                                '<div class="review-author">' +
+                                    '<span class="review-avatar">' + initial + '</span>' +
+                                    '<div>' +
+                                        '<strong>' + escapeHtml(review.name) + '</strong>' +
+                                        '<span class="review-date">' + escapeHtml(review.date) + '</span>' +
+                                    '</div>' +
+                                '</div>' +
+                                '<span class="review-stars" aria-label="Оценка ' + review.rating + ' из 5">' +
+                                    starsHtml(review.rating) +
+                                '</span>' +
+                            '</div>' +
+                            '<p>' + escapeHtml(review.text) + '</p>' +
+                        '</article>'
+                    );
+                }).join('');
+            }
+
+            var reviews = loadReviews();
+            renderReviews(reviews);
+
+            var form = document.getElementById('review-form');
+            var ratingButtons = document.querySelectorAll('#star-rating button');
+            var statusEl = document.getElementById('form-status');
+            var selectedRating = 0;
+
+            ratingButtons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    selectedRating = parseInt(button.getAttribute('data-value'), 10);
+                    ratingButtons.forEach(function (btn) {
+                        var value = parseInt(btn.getAttribute('data-value'), 10);
+                        btn.classList.toggle('active', value <= selectedRating);
+                    });
+                });
+            });
+
+            function showStatus(message, isError) {
+                if (!statusEl) {
+                    return;
+                }
+                statusEl.textContent = message;
+                statusEl.style.color = isError ? '#ff8f8f' : 'var(--accent-light)';
+                statusEl.classList.add('show');
+                setTimeout(function () {
+                    statusEl.classList.remove('show');
+                }, 4000);
+            }
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                var nameInput = document.getElementById('review-name');
+                var textInput = document.getElementById('review-text');
+                var name = nameInput.value.trim();
+                var text = textInput.value.trim();
+
+                if (!name) {
+                    showStatus('Пожалуйста, укажите никнейм.', true);
+                    nameInput.focus();
+                    return;
+                }
+
+                if (!selectedRating) {
+                    showStatus('Пожалуйста, выберите оценку от 1 до 5 звёзд.', true);
+                    return;
+                }
+
+                if (!text) {
+                    showStatus('Пожалуйста, напишите текст отзыва.', true);
+                    textInput.focus();
+                    return;
+                }
+
+                var review = {
+                    name: name,
+                    rating: selectedRating,
+                    date: formatDate(new Date()),
+                    text: text
+                };
+
+                reviews.unshift(review);
+                saveReviews(reviews);
+                renderReviews(reviews);
+
+                form.reset();
+                selectedRating = 0;
+                ratingButtons.forEach(function (btn) {
+                    btn.classList.remove('active');
+                });
+
+                showStatus('Спасибо! Ваш отзыв опубликован.', false);
             });
         })();
     </script>
